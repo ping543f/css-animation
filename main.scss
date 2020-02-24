@@ -1,0 +1,35 @@
+body {
+    background: lightskyblue;
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container {
+    width: 30%;
+    background: white;
+    border-radius: 10px;
+    .inner {
+        background: lightgreen;
+        padding: 1em;
+        border-radius: 10px;
+        width: 100%;
+        clip-path: circle(20% at 0% 0%);
+        transition: clip-path .5s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+        // transition: clip-path .5s ease-in-out;
+        h1 {
+            color: white;
+            margin: 0;
+        }
+        p {
+            color: white;
+            font-size: .8rem;
+        }
+    }
+    &:hover .inner {
+        clip-path: circle(75%);
+    }
+}

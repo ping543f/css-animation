@@ -1,0 +1,47 @@
+body {
+  background: lightskyblue;
+  margin: 0;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container {
+  width: 30%;
+  background: white;
+  border-radius: 10px;
+}
+
+.container .inner {
+  background: lightgreen;
+  padding: 1em;
+  border-radius: 10px;
+  width: 100%;
+  -webkit-clip-path: circle(20% at 0% 0%);
+          clip-path: circle(20% at 0% 0%);
+  -webkit-transition: -webkit-clip-path 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  transition: -webkit-clip-path 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  transition: clip-path 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  transition: clip-path 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045), -webkit-clip-path 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.container .inner h1 {
+  color: white;
+  margin: 0;
+}
+
+.container .inner p {
+  color: white;
+  font-size: .8rem;
+}
+
+.container:hover .inner {
+  -webkit-clip-path: circle(75%);
+          clip-path: circle(75%);
+}
+/*# sourceMappingURL=main.css.map */
